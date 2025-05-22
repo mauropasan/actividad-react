@@ -13,7 +13,7 @@ npm create vite@latest
 Luego debemos seleccionar React y con la opción de JavaScript. Finalmente ya podemos abrir el proyecto con nuestro Visual Studio Code arrastrando la carpeta del proyecto hacia él.</br>
 También puedes descargar este proyecto desde el botón de "Code" y luego "Download ZIP" en el repositorio y con ello, puedes seguir los pasos desde  `Cómo ejecutar la aplicación`.
 
-> [!TIP] Plugins recomendados para Visual Studio Code
+> [!TIP]
 > Estos son plugins que se recomiendan para mejorar la experiencia de programación con React
 
 > [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)</br>
@@ -22,7 +22,7 @@ También puedes descargar este proyecto desde el botón de "Code" y luego "Downl
 > [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)</br>
 > [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
 
-> [!TIP] Plugins recomendados para el navegador
+> [!TIP]
 > Estos son plugins que se recomiendan para poder monitorizar o mostrar los datos de React de una manera simplificada para los componentes, variables, hooks...
 
 > React Developer Tools ([Chrome](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=es), [Firefox](https://addons.mozilla.org/es-ES/firefox/addon/react-devtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search))
@@ -55,7 +55,7 @@ En la cabecera tendremos que poner una lista no ordenada con tres elementos:
 - Inicio
 - Nosotros
 - Contacto
-> [!NOTE] Consejo para la lista
+> [!NOTE]
 > La lista no debe tener decoración, para ello se usa la clase 'list-unstlyed' para quitar los puntos
 ## Footer
 En el pié de página, debemos poner un footer y que contenga:
@@ -83,7 +83,7 @@ Ciudad: <city>
 Con este formato, se debe usar una tarjeta de Bootstrap</br>
 El nombre debe usar h2</br>
 La edad como la ciudad usan p
-> [!NOTE] Tarjeta Bootstrap
+> [!NOTE]
 > Para usar una tarjeta, se usa un div con clase 'card'
 
 ## Counter
