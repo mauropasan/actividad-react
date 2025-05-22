@@ -14,6 +14,17 @@ Luego debemos seleccionar React y con la opción de JavaScript. Finalmente ya po
 
 También puedes descargar este proyecto desde el botón de "Code" y luego "Download ZIP" en el repositorio y con ello, puedes seguir los pasos desde  `Cómo ejecutar la aplicación`.
 
+## Plugins recomendados
+- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+
+- [ES7+ React/redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+- [indent rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
+
+- [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
+
 ## Cómo ejecutar la aplicación
 
 Desde el Visual Studio Code, podemos abrir la terminal con Control + Shift + ñ y usamos:
