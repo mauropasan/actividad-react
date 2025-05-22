@@ -76,10 +76,13 @@ Las variables para mostrar son:
 
 ### Formato para mostrar
 ```
-Nombre: <name>
+<name>
 Edad: <age>
 Ciudad: <city>
 ```
+El nombre debe usar h2
+
+La edad como la ciudad usan p
 
 ## Counter
 ### Parte 1
