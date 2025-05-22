@@ -10,20 +10,22 @@ Esta plantilla se ha realizado a partir del siguiente comando:
 npm create vite@latest
 ```
 
-Luego debemos seleccionar React y con la opción de JavaScript. Finalmente ya podemos abrir el proyecto con nuestro Visual Studio Code arrastrando la carpeta del proyecto hacia él.
-
+Luego debemos seleccionar React y con la opción de JavaScript. Finalmente ya podemos abrir el proyecto con nuestro Visual Studio Code arrastrando la carpeta del proyecto hacia él.</br>
 También puedes descargar este proyecto desde el botón de "Code" y luego "Download ZIP" en el repositorio y con ello, puedes seguir los pasos desde  `Cómo ejecutar la aplicación`.
 
-## Plugins recomendados
-- [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)
+> [!TIP] Plugins recomendados para Visual Studio Code
+> Estos son plugins que se recomiendan para mejorar la experiencia de programación con React
 
-- [ES7+ React/redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+> [Error Lens](https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens)</br>
+>[ES7+ React/redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)</br>
+> [indent rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)</br>
+> [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)</br>
+> [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
 
-- [indent rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+> [!TIP] Plugins recomendados para el navegador
+> Estos son plugins que se recomiendan para poder monitorizar o mostrar los datos de React de una manera simplificada para los componentes, variables, hooks...
 
-- [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
-
-- [VSCode React Refactor](https://marketplace.visualstudio.com/items?itemName=planbcoding.vscode-react-refactor)
+> React Developer Tools ([Chrome](https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=es), [Firefox](https://addons.mozilla.org/es-ES/firefox/addon/react-devtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search))
 
 ## Cómo ejecutar la aplicación
 
@@ -36,18 +38,15 @@ npm run dev
 
 El primer comando instala las dependencias necesarias para poder ejecutar la aplicaicón, mientras que el segundo nos permite ver la aplicación en nuestro navegador.
 
-Ya teniendo la aplicación ejecutando, por defecto usa la dirección:
-```
-localhost:5173
-```
-Dentro de esta dirección estamos alojando nuestro proyecto. Si la podemos ver, pasamos a la práctica
+Ya teniendo la aplicación ejecutando, por defecto usa `localhost:5173`.</br>
+Dentro de esta dirección estamos alojando nuestro proyecto. Si la podemos ver, pasamos a la práctica.
 
 # Actividad
 Crearemos tres componentes y los llamaremos:
-- Header
-- Footer
-- Counter
-- Person
+> Header</br>
+> Footer</br>
+> Counter</br>
+> Person
 
 Recuerda que los componentes se deben crear dentro de ./src/components/ para una mejor organización del código
 
@@ -56,7 +55,8 @@ En la cabecera tendremos que poner una lista no ordenada con tres elementos:
 - Inicio
 - Nosotros
 - Contacto
-
+> [!NOTE] Consejo para la lista
+> La lista no debe tener decoración, para ello se usa la clase 'list-unstlyed' para quitar los puntos
 ## Footer
 En el pié de página, debemos poner un footer y que contenga:
 
@@ -80,9 +80,11 @@ Las variables para mostrar son:
 Edad: <age>
 Ciudad: <city>
 ```
-El nombre debe usar h2
-
+Con este formato, se debe usar una tarjeta de Bootstrap</br>
+El nombre debe usar h2</br>
 La edad como la ciudad usan p
+> [!NOTE] Tarjeta Bootstrap
+> Para usar una tarjeta, se usa un div con clase 'card'
 
 ## Counter
 ### Parte 1
