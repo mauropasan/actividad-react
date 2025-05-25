@@ -1,5 +1,8 @@
+import { Route, Router } from "wouter"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Home from "./views/Home"
+import Users from "./views/Users"
 
 function App() {
   /**
@@ -12,13 +15,12 @@ function App() {
       <div className="d-flex flex-column min-vh-100">
         <Header/>
         <div className="container h-100 flex-fill my-3">
-          <h1>Actividad</h1>
-          <p>Lee README.md para obtener información sobre la actividad
-            y las instrucciones que se deben de seguir.
-          </p>
-          <p>Elimina el contenido del div (NO el div) al empezar el ejercicio.</p>
+          <Router>
+            <Route path={'/'} component={Home}/>
+            <Route path={'/users'} component={Users}/>
+          </Router>
         </div>
-        <Footer/>
+        <Footer name="mauropasan"/>
       </div>
     </>
   )
