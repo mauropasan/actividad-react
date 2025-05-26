@@ -10,6 +10,14 @@ export const Counter = () => {
     setCounter(prevCounter => prevCounter + 1)
   }
 
+  /**
+   * Decrementa el contador, si el valor es 0, saltará una alerta
+   * mostrando que el contador no puede tener valor negátivi
+   */
+  const decreaseCounter = () => {
+    counter === 0 ? alert('El contador no puede tener un valor negativo') : setCounter(prevCounter => prevCounter - 1)
+  }
+
   // Evita el evento por defecto de submit y llama a setCounter para cambiar el contador
   const handleFormSubmit = (e) => {
     e.preventDefault()
@@ -24,14 +32,15 @@ export const Counter = () => {
 
   return(
     <>
-      <div className="card p-3 col-sm-8 col-md-6 col-lg-4 col-xl-3 m-auto">
-        <div className="card-title text-center">
+      <div className="card p-3">
+        <div className="card-title">
           <h2>Contador</h2>
         </div>
         <div className="row">
-          <div className="col-6 m-auto">Contador: {counter}</div>
+          <div className="col-6 m-auto">Valor del contador: {counter}</div>
           <div className="col-6 text-end">
-            <button className="btn btn-primary" onClick={incrementCounter}>Incrementar</button>
+            <button className="btn btn-primary me-1" onClick={incrementCounter}>Incrementar</button>
+            <button className="btn btn-danger" onClick={decreaseCounter}>Decrementar</button>
           </div>
         </div>
         <form className="row" onSubmit={handleFormSubmit}>

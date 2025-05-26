@@ -1,9 +1,9 @@
 import { useEffect } from "react"
-import { useStore } from "../stores/index"
-import User from "../components/User"
+import { useUserStore } from "../stores/index"
+import User from "../components/user/User"
 
 function Users() {
-  const { data, isLoading, error, fetchData } = useStore()
+  const { data, isLoading, error, fetchData } = useUserStore()
   
   /**
    * useEffect permite la reactividad que tiene React,

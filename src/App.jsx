@@ -1,6 +1,6 @@
 import { Route, Router } from "wouter"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
+import Footer from "./components/page/Footer"
+import Header from "./components/page/Header"
 import Home from "./views/Home"
 import Users from "./views/Users"
 

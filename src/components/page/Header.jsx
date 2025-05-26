@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { Link } from "wouter"
 
 export default function Header() {
   // Aquí pondremos los enlaces de las rutas de wouter para cambiar de componente
@@ -10,8 +10,8 @@ export default function Header() {
             <img src="/logo.png" width={40}/>
           </p>
           <ul className="nav gap-3">
-            <Link to="/"><li>Inicio</li></Link>
-            <Link to="/users"><li>Usuarios</li></Link>
+            <Link to="/" className="text-decoration-none text-white"><li>Inicio</li></Link>
+            <Link to="/users" className="text-decoration-none text-white"><li>Usuarios</li></Link>
           </ul>
         </nav>
       </header>
