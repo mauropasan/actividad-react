@@ -18,6 +18,13 @@ const ToDo = () => {
     setToDo("")
   }
 
+  /**
+   * Maneja el botón para borrar la tarea, pidiendo confirmación y luego eliminandolo
+   */
+  const handleBtn = (index) => {
+    confirm("¿Seguro que quieres eliminar la tarea?") ? removeTask(index) : alert("Cancelado")
+  }
+
   return (
     <>
       <div className="card p-3 my-3">
@@ -35,11 +42,11 @@ const ToDo = () => {
 
         <ul className="list-unstyled mt-2">
           {tasks.map((task, index) => (
-            <li key={index}>
-              <button className="btn btn-sm btn-danger me-3 mb-2" onClick={() => removeTask(index)}><i className="bi bi-trash"></i>Borrar</button>
+            <li key={index} className="d-flex align-items-center justify-content-start gap-2 mb-2">
+              <button className="btn btn-sm btn-danger" onClick={() => handleBtn(index)}><i className="bi bi-trash"></i></button>
               <input
                 type="checkbox"
-                className="form-check-input me-2"
+                className="form-check-input"
                 checked={task.done}
                 onChange={() => toggleTask(index)}
               />

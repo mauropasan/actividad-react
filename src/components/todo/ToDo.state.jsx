@@ -30,8 +30,18 @@ const ToDo = () => {
     setTasks(updatedTasks)
   }
 
+  /**
+   * Primero pregunta si quiere borrar la tarea, en caso afirmativo,
+   * procede a eliminarla, si no, devuelve las tareas
+   * @param {Índice de la tarea a eliminar} indexToRemove 
+   * @returns 
+   */
   const removeTask = (indexToRemove) => {
-    return tasks.filter((_, i) => i !== indexToRemove)
+    if(confirm("¿Quieres eliminar la tarea")) {
+      return setTasks(tasks.filter((_, i) => i !== indexToRemove))
+    }
+    alert("Cancelado")
+    return tasks
   }
 
   return (
@@ -51,11 +61,11 @@ const ToDo = () => {
 
         <ul className="list-unstyled mt-2">
           {tasks.map((task, index) => (
-            <li key={index}>
-              <button className="btn btn-danger" onClick={removeTask}><i className="bi bi-trash"></i></button>
+            <li key={index} className="d-flex align-items-center justify-content-start gap-2 mb-2">
+              <button className="btn btn-sm btn-danger" onClick={() => removeTask(index)}><i className="bi bi-trash"></i></button>
               <input
                 type="checkbox"
-                className="form-check-input me-2"
+                className="form-check-input"
                 checked={task.done}
                 onChange={() => toggleTaskDone(index)}
               />
