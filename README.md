@@ -60,14 +60,14 @@ Si la vemos, podemos pasar a la práctica.
 ## Componentes
 Tenemos los siguientes componentes ya creados:
 
-> Header<br/>
-> Footer
+- Header
+- Footer
 
 Y por otra parte, crearemos tres componentes y los llamaremos:
 
-> Counter</br>
-> User</br>
-> ToDo
+- Counter
+- User
+- ToDo
 
 > [!TIP]
 > Recuerda crear una carpeta llamada components para poner los componentes ahí<br/>
