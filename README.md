@@ -58,7 +58,8 @@ También crearemos dos vistas y se llamarán:
 > Home<br/>
 > Users
 
-> [!TIP] A diferencia de los componentes, las vistas se crean en el directorio views.
+> [!TIP]
+> A diferencia de los componentes, las vistas se crean en el directorio views.
 
 ## Componentes
 Tenemos los siguientes componentes ya creados:
@@ -104,7 +105,7 @@ Añadiremos un formulario con un input que nos permita cambiar el valor del cont
 > [!NOTE]
 > Deberemos usar useState() para modificar la variable contador.
 
-### Usuario
+### User
 Este componente recibe por parámetro un usuario para mostrar, y el formato de mostrar debe ser así:
 ```
 <Nombre>
