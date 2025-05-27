@@ -157,3 +157,11 @@ Crearemos una store llamada index.jsx dentro de la carpeta store e implementarem
 
 > [TIP]
 > Recuerda que se debe usar una función anónima con la función set para añadir los usuarios a la store (ej.: export const useUser store((set) => ({ <Todas las variables van aquí> })))
+
+# Opcional
+## Contador
+Modifica el código del contador para que en vez de usar useState, use la store, creando una función dentro de store nueva llamada useCounterStore
+## ToDo
+Al igual que el contador, haz que la lista ToDo funcione por la store con otra función llamada useToDoStore
+
+¿Listos para este desafío? ¡Adelante! :yum:<br/>
